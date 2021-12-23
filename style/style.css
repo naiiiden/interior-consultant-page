@@ -135,6 +135,7 @@ main .text a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 main .text a .fas {
