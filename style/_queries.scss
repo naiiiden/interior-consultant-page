@@ -53,8 +53,7 @@
 
 @media screen and (min-width: 1024px) {
     header {
-        // padding: 42px 77px;
-        padding: 42px 77px;
+        padding: 42px 50px;
 
         .hamburger {
             display: none;
@@ -79,22 +78,20 @@
     main {
         flex-direction: row;
         justify-content: space-between;
-        // padding: 0 4.5rem;
-        padding: 0;
+        padding: 0 50px;
         height: 85vh;
 
         .text {
             align-items: center;
             gap: 3rem;
-            padding: 0 58px;
             
             h1{
-                font-size: 48px;
+                font-size: 38px;
             }
     
             p {
-                font-size: 24px;
-                width: 410px;
+                font-size: 20px;
+                width: 310px;
                 line-height: 29px;
                 height: 100%;
                 margin-left: .85rem;
@@ -106,11 +103,10 @@
         }
 
         figure {
-
-            padding: 0 77px;
+            // padding: 0 77px;
 
             .interior {
-               max-width: 100%;
+               max-width: 565px;
             }
 
             figcaption {
@@ -164,7 +160,6 @@
     main {
         flex-direction: row;
         justify-content: space-between;
-        // padding: 0 4.5rem;
         padding: 0;
         height: 85vh;
 
@@ -192,10 +187,6 @@
 
         figure {
             padding: 0 77px;
-
-            img {
-                width: 767px;
-            }
 
             figcaption {
                 width: 410px;
