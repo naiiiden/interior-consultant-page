@@ -77,7 +77,8 @@
 
     main {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         padding: 0 50px;
         height: 85vh;
 
@@ -106,7 +107,7 @@
             // padding: 0 77px;
 
             .interior {
-               max-width: 565px;
+                width: 100%;
             }
 
             figcaption {
@@ -158,10 +159,8 @@
     }
 
     main {
+        margin: auto;
         flex-direction: row;
-        justify-content: space-between;
-        padding: 0;
-        height: 85vh;
 
         .text {
             align-items: center;
@@ -186,12 +185,16 @@
         }
 
         figure {
-            padding: 0 77px;
+            padding: 0;
+
+            .interior {
+                width: 80%;
+            }
 
             figcaption {
                 width: 410px;
                 top: 86%;
-                right: 11.75%;
+                right: 20.75%;
 
                 p {
                     font-size: 24px;
@@ -206,6 +209,18 @@
                         }
                     }
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    main {
+        figure {
+            margin-left: 10rem;
+
+            .interior {
+                width: 95%;
             }
         }
     }

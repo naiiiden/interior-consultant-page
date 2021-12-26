@@ -13,10 +13,6 @@ body {
   position: relative;
 }
 
-img {
-  max-width: 100%;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,6 +151,10 @@ main figure {
           align-items: center;
   position: relative;
   padding: .5rem;
+}
+
+main figure .interior {
+  width: 100%;
 }
 
 main figure figcaption {
@@ -308,9 +308,12 @@ main figure figcaption .avatar_name .name_job .job {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 50px;
     height: 85vh;
   }
@@ -334,7 +337,7 @@ main figure figcaption .avatar_name .name_job .job {
     font-size: 18px;
   }
   main figure .interior {
-    max-width: 565px;
+    width: 100%;
   }
   main figure figcaption {
     width: 410px;
@@ -371,15 +374,11 @@ main figure figcaption .avatar_name .name_job .job {
     font-size: 18px;
   }
   main {
+    margin: auto;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding: 0;
-    height: 85vh;
   }
   main .text {
     -webkit-box-align: center;
@@ -402,12 +401,15 @@ main figure figcaption .avatar_name .name_job .job {
     font-size: 18px;
   }
   main figure {
-    padding: 0 77px;
+    padding: 0;
+  }
+  main figure .interior {
+    width: 80%;
   }
   main figure figcaption {
     width: 410px;
     top: 86%;
-    right: 11.75%;
+    right: 20.75%;
   }
   main figure figcaption p {
     font-size: 24px;
@@ -417,6 +419,15 @@ main figure figcaption .avatar_name .name_job .job {
   }
   main figure figcaption .avatar_name .name_job .job {
     font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  main figure {
+    margin-left: 10rem;
+  }
+  main figure .interior {
+    width: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
