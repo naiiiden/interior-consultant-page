@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -14,18 +13,11 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 19px 12px;
 }
-
 header .logo {
   font-family: Crimson Pro, sans-serif;
   color: #fff;
@@ -36,70 +28,44 @@ header .logo {
   text-align: center;
   padding: 8px;
 }
-
 header button {
   border: none;
   background-color: transparent;
   color: #fff;
   font-size: 2rem;
 }
-
 header nav ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
 }
-
 header nav ul a {
   color: #fff;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   text-decoration: none;
 }
-
 header nav ul a:hover {
   font-weight: 700;
-  border-bottom: .2rem solid #fff;
-  padding-bottom: .2rem;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: scale 0.3s ease;
+  border-bottom: 0.2rem solid #fff;
+  padding-bottom: 0.2rem;
+  transform: scale(1.1);
   transition: scale 0.3s ease;
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 main .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 1.5rem;
 }
-
 main .text h1 {
   font-family: Lora, sans-serif;
   font-weight: 500;
@@ -107,7 +73,6 @@ main .text h1 {
   color: #fff;
   width: 92.5%;
 }
-
 main .text p {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
@@ -117,65 +82,42 @@ main .text p {
   height: 85px;
   width: 92.5%;
 }
-
 main .text a {
   width: 90%;
   font-family: Montserrat;
   font-weight: 700;
   font-size: 14px;
   color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
 }
-
 main .text a .fas {
   font-size: 20px;
 }
-
 main figure {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  padding: .5rem;
+  padding: 0.5rem;
 }
-
 main figure .interior {
   width: 100%;
 }
-
 main figure figcaption {
   position: absolute;
   top: 82.5%;
   right: 5%;
-  -webkit-box-shadow: 0px 4px 4px 0px #00000040;
-          box-shadow: 0px 4px 4px 0px #00000040;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
   background-color: #181719;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
   padding: 1rem;
   width: 82%;
 }
-
 main figure figcaption p {
   font-family: Lora, sans-serif;
   font-weight: 700;
@@ -183,40 +125,26 @@ main figure figcaption p {
   color: #fff;
   width: 210px;
 }
-
 main figure figcaption .avatar_name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: .75rem;
+  align-items: center;
+  gap: 0.75rem;
 }
-
 main figure figcaption .avatar_name img {
   width: 36.6px;
   height: 36.6px;
   border-radius: 50%;
 }
-
 main figure figcaption .avatar_name .name_job {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 main figure figcaption .avatar_name .name_job .name {
   font-family: Montserrat;
   font-weight: 500;
   font-size: 12px;
   color: #fff;
 }
-
 main figure figcaption .avatar_name .name_job .job {
   font-family: Montserrat;
   font-weight: 500;
@@ -226,8 +154,7 @@ main figure figcaption .avatar_name .name_job .job {
 
 @media screen and (max-width: 768px) {
   header {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   header .hamburger {
     position: fixed;
@@ -235,14 +162,9 @@ main figure figcaption .avatar_name .name_job .job {
     right: 1rem;
     top: 1.25rem;
     cursor: pointer;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: .3rem;
+    flex-direction: column;
+    gap: 0.3rem;
   }
   header .hamburger:focus {
     outline: none;
@@ -255,36 +177,25 @@ main figure figcaption .avatar_name .name_job .job {
   }
   header nav .nav-ul.show {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     height: 100vh;
     z-index: 98;
     background-color: rgba(24, 23, 25, 0.9);
   }
 }
-
 @media screen and (min-width: 768px) {
   .hamburger {
     display: none;
   }
 }
-
 @media screen and (min-width: 1024px) {
   header {
     padding: 42px 50px;
@@ -304,23 +215,14 @@ main figure figcaption .avatar_name .name_job .job {
     font-size: 18px;
   }
   main {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 0 50px;
     height: 85vh;
   }
   main .text {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     gap: 3rem;
   }
   main .text h1 {
@@ -331,7 +233,7 @@ main figure figcaption .avatar_name .name_job .job {
     width: 310px;
     line-height: 29px;
     height: 100%;
-    margin-left: .85rem;
+    margin-left: 0.85rem;
   }
   main .text a {
     font-size: 18px;
@@ -354,7 +256,6 @@ main figure figcaption .avatar_name .name_job .job {
     font-size: 12px;
   }
 }
-
 @media screen and (min-width: 1440px) {
   header {
     padding: 42px 77px;
@@ -375,15 +276,10 @@ main figure figcaption .avatar_name .name_job .job {
   }
   main {
     margin: auto;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   main .text {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     gap: 3rem;
     padding: 0 58px;
   }
@@ -395,7 +291,7 @@ main figure figcaption .avatar_name .name_job .job {
     width: 410px;
     line-height: 29px;
     height: 100%;
-    margin-left: .85rem;
+    margin-left: 0.85rem;
   }
   main .text a {
     font-size: 18px;
@@ -421,7 +317,6 @@ main figure figcaption .avatar_name .name_job .job {
     font-size: 12px;
   }
 }
-
 @media screen and (min-width: 1800px) {
   main figure {
     margin-left: 10rem;
@@ -429,5 +324,4 @@ main figure figcaption .avatar_name .name_job .job {
   main figure .interior {
     width: 95%;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
